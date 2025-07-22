@@ -70,12 +70,6 @@ const AddBookForm = () => {
                 <br/>
                 <br/>
 
-                {/* <label>Genre:</label>
-                <br/>
-                <input type="text" name="genre" value={formData.genre} onChange={handleChange}/>
-                <br/>
-                <br/> */}
-
                 <label>Genre:</label>
             <br/>
             <select name="genre" value={formData.genre} onChange={handleChange}>
@@ -120,7 +114,7 @@ const AddBookForm = () => {
                 <br/>
                 <br/>
 
-                <label>CoverImageUrl:</label>
+                <label>Cover Image Url:</label>
                 <br/>
                 <input type="text" name="coverImageUrl" value={formData.coverImageUrl} onChange={handleChange} />
                 <br/>
