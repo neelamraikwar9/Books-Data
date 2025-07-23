@@ -26,7 +26,7 @@ const AddBookForm = () => {
         event.preventDefault()
 
         try{
-            const response = await fetch("http://localhost:4000/books", {
+            const response = await fetch("https://book-data-iota.vercel.app/books", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

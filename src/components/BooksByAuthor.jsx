@@ -1,6 +1,6 @@
 import useFetch from '../useFetch';
 const BooksByAuthor = ({author}) => {
-const {data, loading, error} = useFetch(`http://localhost:4000/books/director/${author}`)
+const {data, loading, error} = useFetch(`https://book-data-iota.vercel.app/books/director/${author}`)
 // console.log(data)
 return(
     <div>

@@ -2,9 +2,9 @@ import useFetch from '../useFetch';
 import { useState } from "react";
 const Books = () => {
     const [successMessage, setSuccessMessage] = useState("");
-    const {data, loading, error} = useFetch("http://localhost:4000/books");
+    const {data, loading, error} = useFetch("https://book-data-iota.vercel.app/books");
 
-    // console.log(data)
+    console.log(data, 'fjieorjfgoir', error)
 
     const handleDelete = async(bookId) => {
         try{
