@@ -41,6 +41,7 @@ const AddBookForm = () => {
          console.log(response.json)
             const data = await response.json()
             console.log("Added book", data)
+            window.location.reload();
             
 
         } catch(error){
