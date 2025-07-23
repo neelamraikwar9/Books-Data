@@ -8,7 +8,7 @@ const Books = () => {
 
     const handleDelete = async(bookId) => {
         try{
-            const response = await fetch(`http://localhost:4000/books/delete/${bookId}`,
+            const response = await fetch(`https://book-data-iota.vercel.app/books/delete/${bookId}`,
                 {method: "DELETE"}
             );
             

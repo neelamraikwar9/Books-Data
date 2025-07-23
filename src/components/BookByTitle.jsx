@@ -1,7 +1,7 @@
 import useFetch from "../useFetch";
 const BookByTitle = ({title}) => {
  const {data, loading, error} = useFetch(`https://book-data-iota.vercel.app/books/${title}`)
- console.log(data,'ikjdsofijwoefi')
+//  console.log(data,'ikjdsofijwoefi')
     return data?(
         <div key={data.id}>
         <h2>{data.title}</h2>

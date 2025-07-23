@@ -15,7 +15,7 @@ const AddBookForm = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        console.log(name, value)
+        console.log("name", name, "value:", value)
         setFormData((prevState) => ({
             ...prevState, [name]: name === "publishedYear" || name === "rating" ? parseInt(value) : value,
         }));

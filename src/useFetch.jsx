@@ -10,7 +10,7 @@ const useFetch = (url, initialData) => {
       .then((data) => {
         setData(data);
       })
-      .catch((error) => setError(error.message))
+      .catch((error) => {setError(error.message); console.log(url,'urrr')})
       .finally(() => setLoading(false));
   }, [url]);
   return { data, loading, error };
